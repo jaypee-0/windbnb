@@ -11276,6 +11276,11 @@ img {
   border-radius: 20px;
 }
 
+img:hover {
+  -webkit-transform: translate(0.2, 0.5);
+          transform: translate(0.2, 0.5);
+}
+
 .w-90 {
   width: 90%;
 }
@@ -11303,6 +11308,54 @@ img {
 
 .f14 {
   font-size: 1.25rem;
+}
+
+.input1 {
+  background-color: #FFFFFF;
+  -webkit-box-shadow: 1px 5px 5px #e0dbdb;
+          box-shadow: 1px 5px 5px #e0dbdb;
+  border-top-left-radius: 20px;
+  border-bottom-left-radius: 20px;
+  border: 1px solid #e0dbdb;
+}
+
+.input1:focus, .input1:focus-visible {
+  border: 1px solid #EB5757 !important;
+}
+
+.input2 {
+  background-color: #FFFFFF;
+  border: 1px solid #e0dbdb;
+  -webkit-box-shadow: 1px 5px 5px #e0dbdb;
+          box-shadow: 1px 5px 5px #e0dbdb;
+}
+
+.input2:focus, .input2:focus-visible {
+  border: 1px solid #EB5757 !important;
+}
+
+.button {
+  background-color: #FFFFFF;
+  border: 1px solid #e0dbdb;
+  -webkit-box-shadow: 1px 5px 5px #e0dbdb;
+          box-shadow: 1px 5px 5px #e0dbdb;
+  border-top-right-radius: 20px;
+  border-bottom-right-radius: 20px;
+}
+
+.button:focus, .button:focus-visible {
+  border: 1px solid #EB5757 !important;
+}
+
+.fa-magnifying-glass {
+  color: #EB5757;
+}
+
+.carding:hover {
+  -webkit-transition: -webkit-transform .3s;
+  transition: -webkit-transform .3s;
+  transition: transform .3s;
+  transition: transform .3s, -webkit-transform .3s;
 }
 
 @media screen and (max-width: 768px) {

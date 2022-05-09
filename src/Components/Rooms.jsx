@@ -15,7 +15,7 @@ const Rooms = () => {
         <div className='d-flex w-100 flex-wrap mx-auto'>
         {data.map(data => {
             return (
-                <div key={data.id} className="col-6 col-md-4">
+                <div key={data.id} className="col-6 col-md-4 carding">
                     <img className='img-fluid mb-2 w-90' src={data.photo} alt="" />
                     <div className='d-flex w-90 justify-content-between'>
                         <div className='d-flex align-items-center'>
@@ -25,7 +25,7 @@ const Rooms = () => {
                         </div>
                         <p className="rating"><FA className='mr-1' icon="fa-star" />{data.rating}</p>
                     </div>                      
-                    <p className="title fw-bold ">{data.title}</p>
+                    <p className="title fw-bold w-90">{data.title}</p>
                 </div>  
             )
         })}
