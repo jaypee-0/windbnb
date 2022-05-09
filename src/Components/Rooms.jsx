@@ -2,9 +2,7 @@ import React from 'react'
 import data from '../data/stays.json'
 import { FontAwesomeIcon as FA } from '@fortawesome/react-fontawesome'
 
-const Rooms = () => {
-
-//const [loading, setloading] = useState(true)    
+const Rooms = () => {  
 
   return (
     <div className='container'>
