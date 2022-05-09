@@ -4,7 +4,7 @@
  * Copyright 2011-2020 Twitter, Inc.
  * Licensed under MIT (https://github.com/twbs/bootstrap/blob/main/LICENSE)
  */
-@import url("https://fonts.googleapis.com/css2?family=Noto+Sans:wght@300&family=Poppins:wght@300&family=Ubuntu+Mono&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap");
 :root {
   --bs-blue: #0d6efd;
   --bs-indigo: #6610f2;
@@ -11260,11 +11260,19 @@ fieldset:disabled .btn {
   }
 }
 
+body {
+  font-family: 'Montserrat', sans-serif;
+}
+
 img {
   border-radius: 20px;
 }
 
 .w-90 {
   width: 90%;
+}
+
+.fa-star {
+  color: #EB5757;
 }
 /*# sourceMappingURL=App.css.map */

@@ -1,9 +1,17 @@
 @import "../node_modules/bootstrap/scss/bootstrap.scss";
-@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:wght@300&family=Poppins:wght@300&family=Ubuntu+Mono&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap');
 
+$gray3: #828282;
+$d-gray: #333333;
+body {    
+    font-family: 'Montserrat', sans-serif;
+}
 img {
     border-radius: 20px;
 }
 .w-90 {
     width: 90%;
+}
+.fa-star {
+    color: #EB5757;
 }
