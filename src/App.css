@@ -11260,6 +11260,14 @@ fieldset:disabled .btn {
   }
 }
 
+.gray-3 {
+  color: #828282;
+}
+
+.d-gray {
+  color: #333333;
+}
+
 body {
   font-family: 'Montserrat', sans-serif;
 }
@@ -11274,5 +11282,37 @@ img {
 
 .fa-star {
   color: #EB5757;
+}
+
+.super-post {
+  font-size: 12px;
+  border-radius: 50px;
+  border: 2px solid #4F4F4F;
+  text-align: center;
+}
+
+.type {
+  color: #828282;
+  font-weight: 600;
+}
+
+.title {
+  color: #333333;
+}
+
+@media screen and (max-width: 768px) {
+  .type, .beds {
+    font-size: 12px;
+  }
+  .super-post {
+    border-radius: 12px;
+    font-size: 10px;
+  }
+  .rating {
+    font-size: 12px;
+  }
+  .title {
+    font-weight: 14px;
+  }
 }
 /*# sourceMappingURL=App.css.map */
