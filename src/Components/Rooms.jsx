@@ -19,9 +19,9 @@ const Rooms = () => {
                     <img className='img-fluid mb-2 w-90' src={data.photo} alt="" />
                     <div className='d-flex w-90 justify-content-between'>
                         <div className='d-flex align-items-center'>
-                            {data.superHost && <p className='super-post mr-2 py-1 fw-bold px-3'>SUPER HOST</p>}
+                            {data.superHost && <p className='super-post mr-2 py-1 fw-bold '>SUPER HOST</p>}
                             <p className="type">{data.type} </p>
-                            {data.beds && <p className='gray-3 fw-bold beds'><span className='mr-1'>.</span> {data.beds} beds</p>}
+                            {data.beds && <p className='gray-3 fw-bold beds'><span className='d-none d-md-inline mr-1'>.</span> {data.beds} beds</p>}
                         </div>
                         <p className="rating"><FA className='mr-1' icon="fa-star" />{data.rating}</p>
                     </div>                      
