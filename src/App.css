@@ -11300,19 +11300,31 @@ img {
   color: #333333;
 }
 
+.f14 {
+  font-size: 1.25rem;
+}
+
 @media screen and (max-width: 768px) {
+  img {
+    border-radius: 12px;
+  }
   .type, .beds {
     font-size: 12px;
   }
   .super-post {
     border-radius: 12px;
     font-size: 10px;
+    border: 1px solid #4F4F4F;
   }
   .rating {
     font-size: 12px;
   }
   .title {
     font-weight: 14px;
+  }
+  .f14 {
+    font-size: 1rem;
+    margin: auto 0;
   }
 }
 /*# sourceMappingURL=App.css.map */

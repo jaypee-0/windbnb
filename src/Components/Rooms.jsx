@@ -10,7 +10,7 @@ const Rooms = () => {
     <div className='container'>
         <div className='d-flex my-3 justify-content-between'>
             <header className='fs-2 fw-bolder d-gray'>Stays in Finland</header>
-            <p className='mr-5 gray-3 fs-5'>14+ stays</p>
+            <p className='mr-5 gray-3 f14'>14+ stays</p>
         </div>
         <div className='d-flex w-100 flex-wrap mx-auto'>
         {data.map(data => {
