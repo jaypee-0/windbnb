@@ -59,11 +59,24 @@ img {
         border: 1px solid #EB5757!important;
     }
 }
+.bigbutt {
+    background-color: #EB5757; 
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    border: 1px solid rgb(224, 219, 219);
+    box-shadow: 1px 5px 5px rgb(224, 219, 219);
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+    color: white!important;
+}
+.white{
+    color: white;
+}
 .button {
     background-color: #FFFFFF; 
     border: 1px solid rgb(224, 219, 219);
     box-shadow: 1px 5px 5px rgb(224, 219, 219);
-    &:focus,&:focus-visible {
+    &:focus,&:focus-visible,&:active {
         border: 1px solid #EB5757!important;
     }
     border-top-right-radius: 20px;
@@ -77,20 +90,31 @@ img {
         transition: transform .3s;
     }
 }
+
+.fa-xmark {
+    top: 2.5rem;
+    right: 0;
+    font-size: larger;
+    &:hover {
+        color: #EB5757;
+    }
+}
 nav {
     .openMenu{
-        height: 30vh;
+        height: 40vh;
         width: 100%;
         transition: all 0.5s ease;
-        top: 80px;
-        left: -100px;
-        transition: all 0.5s ease;
+        position: absolute;
+        top: -100%;
+        transition: all 1s ease;
         display: flex;
-        flex-direction: column;        
+        flex-direction: column;     
     }
     .openMenu.active{
-        left: 0;
         transition: all 0.5s ease;
+        top: 75px;
+        z-index: 999;
+        background-color: white;
     }
 }
 @media screen and (max-width: 768px) {
@@ -116,5 +140,20 @@ nav {
     .f14 {
         font-size: 1rem;
         margin: auto 0;
+    }
+   
+    nav {
+        .openMenu{
+            width: 96%;
+            height: 45vh;
+        }
+        .openMenu.active{
+            transition: all 1s ease;
+            top: 2.75rem;
+        }
+        .fa-xmark {
+            top: 1.5rem;
+            right: 1rem;
+        }
     }
 }
