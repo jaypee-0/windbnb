@@ -95,8 +95,10 @@ img {
     color: #EB5757;
 }
 .carding {
+    transition: transform 100ms ease-in;
+    cursor: pointer;
     &:hover{
-        transition: transform .3s;
+        transform: scale(1.07);
     }
 }
 
@@ -207,7 +209,7 @@ select {
     nav {
         .openMenu{
             width: 96%;
-            height: 320px;
+            height: 300px;
         }
         .openMenu.active{
             transition: all 0.8 ease;
