@@ -48,6 +48,11 @@ const Rooms = () => {
         setshowlocation(false)
         setshowguests(false)
     }
+    const timeout = () => {
+        setTimeout(() => {
+            closeTop();
+        }, 1000);
+    }
     const handleguests = useCallback(() => {
         setincredecre(incrementa + incrementb);
       }, [incrementa, incrementb])
@@ -68,13 +73,14 @@ const Rooms = () => {
                 <div className='form d-flex mx-auto mt-3 mt-md-0 mx-md-0'>
                     {showtop ?
                         <select 
-                        className='custom-select w-100 py-1 py-md-3 pl-2'                        
-                        onChange={(event) => {
-                            setfiltered(event.target.value)
+                        className='custom-select w-100 py-1 py-md-3 pl-2'  
+                        onClick={timeout}                       
+                        onChange={(e) => {
+                            setfiltered(e.target.value)
                         }}><FA className='pr-3 index3' icon="fa-location-dot" />
-                        <option style={{ padding: 20, border: 0 }} onClick={closeTop} value='0'><FA className='ml-3' style={{color: 'red'}} icon="fa-location-dot" />Location</option>
+                        <option style={{ padding: 20, border: 0 }} value='0' className='disabled'><FA className='ml-3' style={{color: 'red'}} icon="fa-location-dot" />Location</option>
                             {[...locations].map(([city]) => (
-                            <option onClick={closeTop} style={{ padding: 20, border: 0 }} className='py-1 border-0' key={city} 
+                            <option style={{ padding: 20, border: 0 }} className='py-1 border-0' key={city} 
                             value={city}><FA className='ml-3 index3' icon="fa-location-dot" />{city}
                             </option>
                             ))}
@@ -119,8 +125,7 @@ const Rooms = () => {
                     <button onClick={additionb} className='buttons'>+</button></div>            
                 </div>
             </div>}
-            </div>         
-            
+            </div>                    
         </nav>
     <div className='container'>
         <div className='d-flex my-3 justify-content-between'>
