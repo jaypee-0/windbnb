@@ -134,7 +134,7 @@ const Rooms = () => {
                 return data
             } else if (data.city.toLowerCase().includes(filtered.toLowerCase())) {
                 return data
-            }
+            } 
         }).map(data => {
             return (                
                 <div key={data.id} className="col-6 col-md-4 carding">
