@@ -1,6 +1,12 @@
 @import "../node_modules/bootstrap/scss/bootstrap.scss";
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap');
 
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
 $gray3: #828282;
 $d-gray: #333333;
 .gray-3 {
@@ -99,6 +105,9 @@ img {
         color: #EB5757;
     }
 }
+.fa-location-dot {
+    color: black;
+}
 nav {
     .openMenu{
         height: 40vh;
@@ -106,15 +115,42 @@ nav {
         transition: all 0.5s ease;
         position: absolute;
         top: -100%;
-        transition: all 1s ease;
+        transition: all 0.75s ease;
         display: flex;
         flex-direction: column;     
     }
     .openMenu.active{
         transition: all 0.5s ease;
         top: 75px;
-        z-index: 999;
+        z-index: 1;
         background-color: white;
+    }
+}
+.navdeets {
+    z-index: 2;
+    position: absolute;
+    top: 140px;
+}
+.index3 {
+    z-index: 3;
+}
+
+select {
+    top: 75px;
+    background-color: #FFFFFF;
+    box-shadow: 1px 5px 5px rgb(224, 219, 219);
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+    border: 1px solid rgb(224, 219, 219);
+    &:focus,&:focus-visible {
+        border: 1px solid #EB5757!important;
+    }
+    &::after {
+        border: none; 
+        padding: 20px 5px;
+        content: "";
+        color: #EB5757;
+        background-color: #EB5757;
     }
 }
 @media screen and (max-width: 768px) {
@@ -148,7 +184,7 @@ nav {
             height: 45vh;
         }
         .openMenu.active{
-            transition: all 1s ease;
+            transition: all 0.8 ease;
             top: 2.75rem;
         }
         .fa-xmark {

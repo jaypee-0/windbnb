@@ -19,7 +19,7 @@ const Room = () => {
 
   return (
     <div>
-      {available.map(data => {
+      {available.filter(data => {
         return (
           <div key={data.id} className="col-6 col-md-4 carding">
                     <img className='img-fluid mb-2 w-90' src={data.photo} alt="" />
