@@ -80,8 +80,7 @@ const Rooms = () => {
                             ))}
                             
                         </select> : 
-                        <input type="text" onClick={handleTopLocate} className='w-100 input1 py-2 py-md-3 pl-2' placeholder='Place'/>
-                    
+                        <input type="text" onClick={handleTopLocate} className='w-100 input1 py-2 py-md-3 pl-2' placeholder='Place'/>                    
                     }
                     <input 
                     type="text" 
@@ -129,12 +128,14 @@ const Rooms = () => {
             <p className='mr-md-5 gray-3 f14'>14+ stays</p>
         </div>
         <div className='d-flex w-100 flex-wrap mx-auto'>
-        {data.filter((data) => {            
+        {data.filter((data) => {             
             if (filtered === "") {
                 return data
             } else if (data.city.toLowerCase().includes(filtered.toLowerCase())) {
                 return data
-            } 
+            } else {
+                return data
+            }
         }).map(data => {
             return (                
                 <div key={data.id} className="col-6 col-md-4 carding">
